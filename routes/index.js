@@ -48,7 +48,7 @@ router.post('/createUsers', async (request, response) => {
         response.send("Error: " + err);
     }
 })
-module.exports = router;
+
 
 //Update User Details
 router.put('/updateUser/:userId/', async (request, response) => {
@@ -73,3 +73,5 @@ router.delete('/deleteUser/:userId/', async (request, resposne) => {
         resposne.send("Error: " + err);
     }
 })
+
+module.exports = router;
